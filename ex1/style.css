@@ -1,33 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
+
 body {
     background-color: #f7f7f7;
     font-family: Arial, Helvetica, sans-serif;
 }
-header {
-    text-align: center;
-    margin-top: 50px;
-}
+
 img {
     max-width: 100%;
 }
+
 p {
     font-size: 20px;
-    grid-column: 1;
 }
 
-li {
-    background-color: white;
-    margin: 10px;
-    padding: 15px 20px;
-}
-h3 {
-    grid-column: -1;
+/* Header */
+
+.header {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .menu {
@@ -36,6 +33,15 @@ h3 {
     justify-content: center;
 }
 
+.menu li {
+    background-color: white;
+    margin: 10px;
+    padding: 15px 20px;
+}
+
+/* Main */
+
+/* Linha 1 */
 .conteudo {
     margin-top: 40px;
     display: grid;
@@ -52,24 +58,35 @@ h3 {
     background-color: white;
 }
 
-.linha2 {
-    background-color: #f7f7f7;
-    color: #c6c6c6;
-    font-size: 48px;
-}
-
 .botao {
     text-align: center;
     justify-self: right;
     background-color: #ee2211;
     border-radius: 4px;
-    border: 0;
     padding: 15px 30px;
     color: #ffff;
     width: 150px;
 }
 
-.container-flex {
+/* Linha 2 */
+
+.vantagens-bikcraft {
+    display: grid;
+    text-align: right;
+    place-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f7f7f7;
+    color: #c6c6c6;
+    font-size: 48px;
+}
+
+.container-vantagens {
+    background-color: #ffff;
+    padding: 40px;
+}
+
+.grid {
     display: grid;
     place-items: center left;
     grid-template-columns:auto 1fr;
@@ -77,18 +94,13 @@ h3 {
     margin-bottom: 40px;
 }
 
-
-.p-grid {
+.titulo-vantagens, .texto-vantagens {
     grid-column: -1;
 }
 
-.conteudo-linha2 {
-    background-color: #ffff;
-    padding: 40px;
-}
+/* Footer */
 
-
-footer {
+.footer {
     text-align: center;
     background-color: #fff;
     padding: 40px;
