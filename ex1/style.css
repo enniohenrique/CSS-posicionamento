@@ -33,10 +33,11 @@ p {
     justify-content: center;
 }
 
-.menu li {
+.menu li a{
+    color: #000;
     background-color: white;
-    margin: 10px;
     padding: 15px 20px;
+    margin: 10px;
 }
 
 /* Main */
