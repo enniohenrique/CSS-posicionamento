@@ -24,28 +24,29 @@ p {
 
 .header {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .menu {
     display: flex;
-    margin-top: 40px;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 60px;
 }
 
-.menu li a{
+.menu  a{
     color: #000;
-    background-color: white;
-    padding: 15px 20px;
-    margin: 10px;
+    background-color: #fff;
+    padding: 15px 20px; 
+    margin: 20px;
 }
 
 /* Main */
 
 /* Linha 1 */
 .conteudo {
-    margin-top: 40px;
     display: grid;
+    margin-top: 60px;
     grid-template-columns: 500px 500px;
     place-content: center;
 }
@@ -53,33 +54,29 @@ p {
 .info {
     display: grid;
     text-align: right;
-    place-content: center;
+    align-content: center;
     gap: 20px;
     padding: 40px;
     background-color: white;
+    justify-items: end;
 }
 
 .botao {
     text-align: center;
-    justify-self: right;
     background-color: #ee2211;
     border-radius: 4px;
     padding: 15px 30px;
     color: #ffff;
-    width: 150px;
 }
 
 /* Linha 2 */
 
 .vantagens-bikcraft {
-    display: grid;
     text-align: right;
-    place-content: center;
-    gap: 20px;
+    align-self: center;
     padding: 40px;
-    background-color: #f7f7f7;
     color: #c6c6c6;
-    font-size: 48px;
+    font-size: 64px;
 }
 
 .container-vantagens {
@@ -92,11 +89,11 @@ p {
     place-items: center left;
     grid-template-columns:auto 1fr;
     gap: 10px 20px;
-    margin-bottom: 40px;
+    padding: 20px;
 }
 
 .titulo-vantagens, .texto-vantagens {
-    grid-column: -1;
+    grid-column: 2;
 }
 
 /* Footer */
