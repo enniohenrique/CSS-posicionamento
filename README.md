@@ -1,4 +1,4 @@
-# Bikcraft - Bicicletas Personalizadas
+# Bikcraft - Exercício
 
 ## Sobre o Exercício
 <p> Exercício de posicionamento para treinar a utilização das propriedades FlexBox e Grid layout</p>
