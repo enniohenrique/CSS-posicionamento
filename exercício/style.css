@@ -10,6 +10,8 @@
 body {
     background-color: #f7f7f7;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 img {
@@ -43,7 +45,7 @@ p {
 }
 
 .menu a {
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     color: #000;
     padding: 15px 20px; 
     background-color: #fff;
@@ -63,7 +65,7 @@ p {
 
 .primeira-linha {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -108,7 +110,7 @@ p {
 
 .segunda-linha {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .background-vantagens {
@@ -158,4 +160,38 @@ p {
     background-color: #fff;
     padding: 40px;
     margin-top: 60px;
+}
+
+/* Responsisvo */
+
+@media (max-width: 1200px) {
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .header, .menu {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .info {
+        gap: 0;
+    }
+
+    .info h1, .info p{
+        margin-bottom: 20px;
+    }
+
+    .vantagens-bikcraft {
+        font-size: 2.75rem;
+    }
+    
+    .grid {
+        gap: 0;
+    }
+
+    .icone {
+        padding-right: 20px;
+    }
+
 }
