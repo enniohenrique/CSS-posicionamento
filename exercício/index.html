@@ -24,8 +24,8 @@
 
     <main class="conteudo">
         <article class="primeira-linha">
-            <div class="info">
-                <h1>Bicicletas feitas a Mão</h1>
+            <div class="info" aria-labelledby="label-info">
+                <h1 id="label-info">Bicicletas feitas a Mão</h1>
                 <p>
                     A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.
                 </p>
@@ -35,32 +35,34 @@
             <img src="./img/bicicleta.jpg" class="img-bikcraft" alt="Bicicleta Bikcraft">
         </article>
 
+        <article class="segunda-linha" aria-labelledby="label-vantagens">
             <div class="background-vantagens">
-                <h2 class="vantagens-bikcraft">
+                <h2 class="vantagens-bikcraft" id="label-vantagens">
                     VANTAGENS BIKCRAFT
                 </h2>
             </div>
 
-            <div class="container-vantagens">
-                <div class="grid">
+            <ul class="container-vantagens">
+                <li class="grid">
                     <img src="./img/eletrica.svg" class="icone" alt="">
                     <h3 class="titulo-vantagens">Motor Elétrico</h3>
                     <p class="texto-vantagens">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-                </div>
+                </li>
 
-                <div class="grid">
+                <li class="grid">
                     <img src="./img/velocidade.svg" alt="">
                     <h3 class="titulo-vantagens">40 km/h</h3>
                     <p class="texto-vantagens">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-                </div>
+                </li>
 
-                <div class="grid">
+                <li class="grid">
                     <img src="./img/rastreador.svg" alt="">
                     <h3 class="titulo-vantagens">Rastreador</h3>
                     <p class="texto-vantagens">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-                </div>
-            </div>
-
+                </li>
+            </ul>
+            
+        </article>
     </main>
 
     <footer class="footer">
