@@ -8,10 +8,11 @@
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: hsl(0, 0%, 97%);
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1000px;
     margin: 0 auto;
+    
 }
 
 img {
@@ -30,18 +31,18 @@ p {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
+    
 }
 
 .menu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 60px;
 }
 
 .menu li {
     border-radius: 4px;
-    margin: 20px;
+    margin: 2px;
 }
 
 .menu a {
@@ -59,6 +60,7 @@ p {
 .conteudo {
     display: grid;
     place-content: center;
+    
 }
     
 /* Linha 1 */
@@ -66,7 +68,6 @@ p {
 .primeira-linha {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .info {
@@ -92,6 +93,7 @@ p {
     position: absolute;
     top: 30px;
     right: -40px;
+    z-index: 1;     /* Fazendo com que o detalhe fique por cima da imagem da bicicleta */
 }
 
 .botao {
@@ -122,7 +124,8 @@ p {
 .vantagens-bikcraft {
     text-align: right;
     padding: 40px;
-    color: #c6c6c6;
+    color: #c7c7c7;
+    text-shadow: -2px 1px 2px black;
     font-size: 4rem;
 }
 
@@ -153,6 +156,8 @@ p {
     grid-column: 2;
 }
 
+
+
 /* Footer */
 
 .footer {
@@ -164,8 +169,9 @@ p {
 
 /* Responsisvo */
 
-@media (max-width: 1200px) {
+/* Tablets */
 
+@media  (max-width: 768px) {
     p {
         font-size: 1.1rem;
     }
@@ -175,7 +181,8 @@ p {
         margin-bottom: 30px;
     }
     .info {
-        gap: 0;
+        gap: 0px;
+        padding: 80px 40px;
     }
 
     .info h1, .info p{
@@ -194,4 +201,48 @@ p {
         padding-right: 20px;
     }
 
+    /* Resolvendo o problema da imagem no ipad */
+    .container-img {
+		position: relative;
+	}
+	.container-img img{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+    
+}
+
+@media (max-width: 480px) {
+
+    body {
+        width: 100vw;
+    }
+    .menu {
+        font-size: 0.6rem;
+    }    
+    
+    .conteudo {
+        display: grid;
+        grid-template-columns: 100vw;
+    }
+
+    .primeira-linha, .segunda-linha  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info::before {
+        content: "";
+        width: 80px;
+        height: 4px;
+        position: absolute;
+        top: 30px;
+        right: 148px;
+        z-index: 1;     /* Fazendo com que o detalhe fique por cima da imagem da bicicleta */
+    }
+
+    
 }
